@@ -72,7 +72,7 @@ def main():
             message.set_content("Plain text version")
             message.add_alternative("<h1>HTML version</h1>", subtype="html")
             message.add_attachment(b"hello attachment", maintype="application", subtype="octet-stream", filename="sample.bin")
-            with smtplib.SMTP("127.0.0.1", ports["smtp"], timeout=10) as smtp:
+            with smtplib.SMTP("127.0.0.1", ports["smtp"], local_hostname="localhost", timeout=10) as smtp:
                 smtp.send_message(message, to_addrs=["alice@mailgrid.test", "nobody@example.test"])
 
             alice = engine.call("messages.list", {"account": "alice@mailgrid.test"})
@@ -84,7 +84,7 @@ def main():
             assert detail["attachments"][0]["name"] == "sample.bin"
             unknown = engine.call("messages.get", {"account": "catchall", "uid": catchall[0]["uid"]})
             assert "nobody@example.test" in unknown["deliveredTo"]
-            with smtplib.SMTP("127.0.0.1", ports["smtp"], timeout=10) as smtp:
+            with smtplib.SMTP("127.0.0.1", ports["smtp"], local_hostname="localhost", timeout=10) as smtp:
                 smtp.ehlo()
                 assert smtp.mail("app@example.test", options=["SIZE=999999999"])[0] == 552
                 smtp.rset()
@@ -113,7 +113,7 @@ def main():
             engine.call("compose.send", {"from": "alice@mailgrid.test", "to": ["bob@mailgrid.test"], "subject": "Local hello", "text": "hello Bob"})
             sent = engine.call("messages.list", {"account": "alice@mailgrid.test", "folder": "Sent"})
             assert len(sent) == 1, sent
-            with smtplib.SMTP("127.0.0.1", ports["smtp"], timeout=10) as smtp:
+            with smtplib.SMTP("127.0.0.1", ports["smtp"], local_hostname="localhost", timeout=10) as smtp:
                 try:
                     smtp.login("alice@mailgrid.test", "incorrect-password")
                     raise AssertionError("incorrect SMTP password accepted")
@@ -138,7 +138,7 @@ def main():
             assert engine.call("messages.list", {"account": "bob@mailgrid.test"}) == []
             engine.call("accounts.updatePassword", {"address": "alice@mailgrid.test", "password": "fixture-password"})
             engine.call("accounts.verifyPassword", {"address": "alice@mailgrid.test", "password": "fixture-password"})
-            with smtplib.SMTP("127.0.0.1", ports["smtp"], timeout=10) as smtp:
+            with smtplib.SMTP("127.0.0.1", ports["smtp"], local_hostname="localhost", timeout=10) as smtp:
                 try:
                     smtp.login("alice@mailgrid.test", "correct-horse-123")
                     raise AssertionError("old password still accepted")
@@ -155,7 +155,7 @@ def main():
                 pop.quit()
             spaced_password = " space #$ "
             engine.call("accounts.updatePassword", {"address": "alice@mailgrid.test", "password": spaced_password})
-            with smtplib.SMTP("127.0.0.1", ports["smtp"], timeout=10) as smtp:
+            with smtplib.SMTP("127.0.0.1", ports["smtp"], local_hostname="localhost", timeout=10) as smtp:
                 smtp.login("alice@mailgrid.test", spaced_password)
             with imaplib.IMAP4("127.0.0.1", ports["imap"], timeout=10) as imap:
                 imap.login("alice@mailgrid.test", spaced_password)

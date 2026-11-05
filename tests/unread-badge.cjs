@@ -1,9 +1,10 @@
 const assert = require('node:assert/strict'), fs = require('node:fs'), path = require('node:path'), zlib = require('node:zlib');
 const source = fs.readFileSync(path.join(__dirname, '../dist-electron/unread-badge.js'), 'utf8');
+const moduleRequire = require('node:module').createRequire(path.join(__dirname, '../dist-electron/unread-badge.js'));
 function load(platform) {
  const calls = [], target = { exports: {} };
  const electron = { app: { setBadgeCount: count => { calls.push(count); return true; } }, nativeImage: { createFromBuffer: buffer => buffer } };
- new Function('require', 'module', 'exports', 'process', source)(name => name === 'electron' ? electron : require(name), target, target.exports, { platform });
+ new Function('require', 'module', 'exports', 'process', source)(name => name === 'electron' ? electron : moduleRequire(name), target, target.exports, { platform });
  return { ...target.exports, calls };
 }
 for (const platform of ['darwin', 'linux', 'win32']) {

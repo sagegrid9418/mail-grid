@@ -1,5 +1,6 @@
 const assert = require('node:assert/strict'), fs = require('node:fs'), path = require('node:path');
 const { EventEmitter } = require('node:events');
+const moduleRequire = require('node:module').createRequire(path.join(__dirname, '../dist-electron/system-settings.js'));
 const source = fs.readFileSync(path.join(__dirname, '../dist-electron/system-settings.js'), 'utf8');
 function adapter(platform, desktop = '', fail = false) {
  const calls = [], target = { exports: {} };
@@ -8,7 +9,7 @@ function adapter(platform, desktop = '', fail = false) {
   calls.push({ command, args, options }); const child = new EventEmitter(); child.unref = () => {};
   setImmediate(() => fail ? child.emit('error', new Error('ENOENT')) : child.emit('spawn')); return child;
  } };
- new Function('require', 'module', 'exports', 'process', source)(name => name === 'electron' ? electron : name === 'node:child_process' ? childProcess : require(name), target, target.exports, { platform, env: { XDG_CURRENT_DESKTOP: desktop } });
+ new Function('require', 'module', 'exports', 'process', source)(name => name === 'electron' ? electron : name === 'node:child_process' ? childProcess : moduleRequire(name), target, target.exports, { platform, env: { XDG_CURRENT_DESKTOP: desktop } });
  return { calls, open: target.exports.openSystemSettings };
 }
 (async () => {

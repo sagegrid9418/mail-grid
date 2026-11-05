@@ -4,6 +4,20 @@ A desktop email workspace for local development. Create named test accounts, cap
 
 Mail Grid binds to `127.0.0.1`. It has no internet delivery route, cloud account, or public HTTP API.
 
+## Download Mail Grid
+
+Get Mail Grid from **[mail-dev.sagegrid.org](https://mail-dev.sagegrid.org)** or download the **[0.3.2 beta on GitHub](https://github.com/sagegrid9418/mail-grid/releases/tag/v0.3.2)**:
+
+| Platform | Installer |
+| --- | --- |
+| macOS — Intel and Apple Silicon | [Universal DMG](https://github.com/sagegrid9418/mail-grid/releases/download/v0.3.2/Mail-Grid-0.3.2-macOS-Universal.dmg) |
+| Windows — x64 | [Setup EXE](https://github.com/sagegrid9418/mail-grid/releases/download/v0.3.2/Mail-Grid-0.3.2-Windows-x64-Setup.exe) |
+| Linux — Debian/Ubuntu AMD64 | [DEB package](https://github.com/sagegrid9418/mail-grid/releases/download/v0.3.2/mail-grid_0.3.2_amd64.deb) |
+
+See the [installation instructions](packaging/INSTALL.txt) and download [SHA256SUMS](https://github.com/sagegrid9418/mail-grid/releases/download/v0.3.2/SHA256SUMS) to check your installer. GitHub release assets also include signed per-platform verification metadata. Installers stay outside Git source history.
+
+These are beta builds. macOS uses ad-hoc signing without notarization, and Windows has no paid publisher certificate; OS security prompts may appear. Native installation/update checks on Windows, Linux and Apple Silicon remain outstanding. See [release verification](SIGNING.md).
+
 ## Run from source
 
 Requires Node.js 22.12 or newer, Go 1.27, and the build tools for your operating system. Python 3 is used by the protocol integration test.
@@ -123,15 +137,9 @@ The mail engine uses go-smtp, go-imap, go-imap-sql, and SQLite. Exact dependency
 - Click an account header to expand or collapse it. Accounts expand independently. Clicking an expanded folder opens that mailbox. Each account’s expansion state is saved immediately and restored after closing or restarting; changing the app theme preserves it.
 - `npm run test:sidebar` verifies account expansion, restart persistence, unread badge updates, hidden-window IMAP changes, and clearing counts after reading or moving mail to Trash.
 
-## Downloadable local installers
+## Installer builds
 
-The current beta installers are collected in `out/installers/`:
-
-- `Mail-Grid-0.3.2-macOS-Universal.dmg` — Universal macOS, native Intel and Apple Silicon.
-- `Mail-Grid-0.3.2-Windows-x64-Setup.exe` — Windows x64, per-user NSIS installer with Start menu shortcut and uninstaller.
-- `mail-grid_0.3.2_amd64.deb` — Ubuntu/Debian AMD64, install with `sudo apt install ./mail-grid_0.3.2_amd64.deb`.
-
-`INSTALL.txt` explains installation, and `SHA256SUMS` verifies the files. The Mac beta uses local/ad-hoc signatures; the Windows beta is unsigned. Paid platform certificates and notarization are optional. Free release signatures/checksums are required. Native clean-machine installation/update tests remain necessary before claiming platform verification. See [installer build instructions](packaging/README.md) for reproducible builds with `npm run installers`.
+Building locally writes installers, `INSTALL.txt` and `SHA256SUMS` to `out/installers/`. See [installer build instructions](packaging/README.md) for reproducible builds with `npm run installers`. Published downloads are linked above.
 
 ## macOS system registration and local signing
 

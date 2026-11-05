@@ -1,5 +1,6 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path');
+const moduleRequire = require('node:module').createRequire(path.join(__dirname, '../dist-electron/mail-notifications.js'));
 const {EventEmitter}=require('node:events');
 const target={exports:{}};
 let supported=true;
@@ -17,7 +18,7 @@ class MockWindow extends EventEmitter {
  destroy(){this.destroyed=true;this.emit('closed');}
 }
 const electron={nativeTheme:{shouldUseDarkColors:false},BrowserWindow:MockWindow,Notification:MockNotification,screen:{getPrimaryDisplay:()=>({workArea:{x:0,y:0,width:1400,height:900}})}};
-new Function('require','module','exports',fs.readFileSync(path.join(__dirname,'../dist-electron/mail-notifications.js'),'utf8'))(name=>name==='electron'?electron:require(name),target,target.exports);
+new Function('require','module','exports',fs.readFileSync(path.join(__dirname,'../dist-electron/mail-notifications.js'),'utf8'))(name=>name==='electron'?electron:moduleRequire(name),target,target.exports);
 const {MailNotifications}=target.exports;
 let opened,status;
 const service=new MailNotifications(mail=>{opened=mail;},value=>{status=value;});

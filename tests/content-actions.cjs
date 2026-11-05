@@ -1,11 +1,12 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
+const moduleRequire = require('node:module').createRequire(path.join(__dirname, '../dist-electron/content-actions.js'));
 const target = { exports: {} };
 let copied, opened;
 const electron = { clipboard: { writeText: value => { copied=value; } }, shell: { openExternal: async value => { opened=value; } } };
 new Function('require','module','exports',fs.readFileSync(path.join(__dirname,'../dist-electron/content-actions.js'),'utf8'))(
- name => name==='electron' ? electron : require(name), target, target.exports,
+ name => name==='electron' ? electron : moduleRequire(name), target, target.exports,
 );
 const { browserURL, contentMenuItems, openBrowser } = target.exports;
 (async () => {
