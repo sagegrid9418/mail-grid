@@ -1,0 +1,42 @@
+Mail Grid 0.3.2 — local beta installers
+
+macOS Universal (Intel and Apple Silicon):
+  Open the DMG and drag Mail Grid into Applications.
+  Quit any running copy before replacing it. This local Mac beta is signed
+  with free local/ad-hoc signing; it is not a notarized public release.
+  The same universal DMG includes native Intel and Apple Silicon executables.
+
+Windows 11 x64:
+  Run Mail-Grid-0.3.2-Windows-x64-Setup.exe.
+  Installs for your Windows user, with a Start menu entry and uninstaller.
+  A desktop shortcut is optional. Quit Mail Grid from the tray before upgrading.
+  The unsigned beta may trigger an unknown-publisher warning.
+
+Ubuntu 24.04 / Debian amd64:
+  In the directory containing the package, run:
+    sudo apt install ./mail-grid_0.3.2_amd64.deb
+  Open Mail Grid from the application launcher, or run mail-grid.
+  Remove with: sudo apt remove mail-grid
+  Other Linux distributions need their own package format.
+
+SMTP host: 127.0.0.1, port 1025
+IMAP port: 1143; POP3 port: 1110; no TLS (loopback only).
+All email stays on this computer. See Connection settings in the app.
+
+User mail and account settings are preserved when upgrading or uninstalling.
+System notification and login-startup permissions may need enabling in Settings.
+Windows and Linux packages were cross-built on macOS; clean-machine
+installation and Thunderbird compatibility checks on those systems remain required.
+These are beta installers; paid platform certificates/notarization are not included.
+SHA256SUMS contains the SHA-256 checksum for every installer.
+
+Update downloads are controlled in Software updates on each computer.
+Manual is the default; Automatic is optional. Installation always needs approval.
+
+New profiles complete required setup before capture begins. Existing profiles keep their settings.
+Updates are authenticated with free Ed25519 keys and checksums; paid signing is optional.
+Older keyless installations need one manual installation of this new build to enable future in-app updates.
+
+0.3.2 downloads support Pause, Resume, cancellation and restart recovery.
+An older app downloading this first upgrade still uses its older downloader.
+All offered interface languages load locally; email contents are not translated.

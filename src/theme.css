@@ -1,0 +1,36 @@
+.app-shell { user-select: none; -webkit-user-select: none; }
+input, textarea, [contenteditable], .preview-body, .message-header, .credential-box, .env-config, .connection-credentials code, .connection-card strong { user-select: text; -webkit-user-select: text; }
+.permission-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.permission-actions .secondary, .permission-button { font-size: 11px; padding: 8px 10px; }
+.restart-backdrop { z-index: 70; }
+.permission-notice { color: #956116; }
+.restart-notice { color: #956116; background: #fff3d8; margin-top: 6px; }
+.restart-connection-note { font-size: 12px; line-height: 1.6; padding: 12px; background: #fff3d8; color: #7d5416; border-radius: 8px; }
+:root[data-theme="dark"] { background: #111827; color: #dbe4f2; }
+[data-theme="dark"] .sidebar { background: #151e2c; border-color: #2c394b; }
+[data-theme="dark"] .mail-list-panel, [data-theme="dark"] .modal, [data-theme="dark"] .incoming-toast, [data-theme="dark"] .reader-toolbar { background: #192334; border-color: #2c394b; }
+[data-theme="dark"] .reader-panel { background: #111b29; }
+[data-theme="dark"] .message-row { background: #192334; border-color: #263347; }
+[data-theme="dark"] .message-row:hover, [data-theme="dark"] .nav-item:hover, [data-theme="dark"] .sidebar-action:hover, [data-theme="dark"] .account-folders button:hover, [data-theme="dark"] .icon-only:hover:not(:disabled), [data-theme="dark"] .secondary:hover { background: #263449; }
+[data-theme="dark"] .nav-item.selected, [data-theme="dark"] .message-row.active, [data-theme="dark"] .message-row.checked { background: #24385c; color: #a4bdff; }
+[data-theme="dark"] .brand strong, [data-theme="dark"] .heading-line h1, [data-theme="dark"] .message-header h2, [data-theme="dark"] .modal-heading h2, [data-theme="dark"] .reader-empty h2, [data-theme="dark"] .message-top strong, [data-theme="dark"] .message-subject, [data-theme="dark"] .sender-details strong, [data-theme="dark"] .connection-card strong, [data-theme="dark"] .config-heading h3, [data-theme="dark"] .account-card-title, [data-theme="dark"] .attachments button strong { color: #e2eaf7; }
+[data-theme="dark"] .nav-item, [data-theme="dark"] .sidebar-action, [data-theme="dark"] .account-folders button, [data-theme="dark"] .icon-only, [data-theme="dark"] .modal label, [data-theme="dark"] .preference-section h3, [data-theme="dark"] .credential-box span, [data-theme="dark"] .preview-body pre, [data-theme="dark"] .empty-list h3, [data-theme="dark"] .connection-credentials code, [data-theme="dark"] .credential-box strong { color: #bccae0; }
+[data-theme="dark"] .panel-heading p, [data-theme="dark"] .modal-intro, [data-theme="dark"] .field-help, [data-theme="dark"] .reader-empty p, [data-theme="dark"] .settings-accounts-link p, [data-theme="dark"] .message-preview, [data-theme="dark"] .message-top time, [data-theme="dark"] .message-row:not(.unread) .message-top strong, [data-theme="dark"] .message-row:not(.unread) .message-subject, [data-theme="dark"] .incoming-toast p, [data-theme="dark"] .sidebar-hint, [data-theme="dark"] .full-date, [data-theme="dark"] .sender-details span, [data-theme="dark"] .eyebrow, [data-theme="dark"] .side-label, [data-theme="dark"] .brand small, [data-theme="dark"] .list-meta { color: #9aacc6; }
+[data-theme="dark"] .search-wrap, [data-theme="dark"] .account-card, [data-theme="dark"] .credential-box, [data-theme="dark"] .account-empty, [data-theme="dark"] .empty-icon, [data-theme="dark"] .reader-empty-illustration, [data-theme="dark"] .envelope-back { background: #202d41; border-color: #34435b; }
+[data-theme="dark"] .search-wrap input { color: #e2eaf7; }
+[data-theme="dark"] .modal label input, [data-theme="dark"] .modal label textarea, [data-theme="dark"] .modal label select { background: #111c2d; border-color: #3b4b65; color: #e2eaf7; }
+[data-theme="dark"] .secondary, [data-theme="dark"] .attachments button, [data-theme="dark"] .bulk-actions button { background: #233149; border-color: #3a4b65; color: #c5d7f5; }
+[data-theme="dark"] .mailbox-actions button, [data-theme="dark"] .connection-copy, [data-theme="dark"] .guide-note, [data-theme="dark"] .bulk-actions, [data-theme="dark"] .avatar, [data-theme="dark"] .sender-avatar { background: #243655; border-color: #3b5176; color: #b5cbff; }
+[data-theme="dark"] .selected .avatar { background: #354e7d; color: #d1deff; }
+[data-theme="dark"] .text-button, [data-theme="dark"] .preview-body a, [data-theme="dark"] .account-folders button.active, [data-theme="dark"] .incoming-title, [data-theme="dark"] .preview-tabs button.active { color: #a5bdff; }
+[data-theme="dark"] .preview-tabs button.active { border-bottom-color: #a5bdff; }
+[data-theme="dark"] .preview-body, [data-theme="dark"] .preview-body iframe { background: #192334; border-color: #34435b; }
+[data-theme="dark"] .service-indicator, [data-theme="dark"] .safe-note { background: #1c3831; color: #a3d8bd; }
+[data-theme="dark"] .danger-button, [data-theme="dark"] .error-banner { background: #3f2529; color: #ffbdb5; border-color: #74464c; }
+[data-theme="dark"] .error-banner button, [data-theme="dark"] .inline-error { color: #ffb5ab; }
+[data-theme="dark"] .inline-success { color: #8dd7b1; }
+[data-theme="dark"] .password-recovery, [data-theme="dark"] .restart-notice, [data-theme="dark"] .restart-connection-note { background: #3a301f; border-color: #685735; color: #eed29b; }
+[data-theme="dark"] .password-recovery p { color: #eed29b; }
+[data-theme="dark"] .toast { background: #d5e3fa; color: #162741; }
+[data-theme="dark"] .toast svg { color: #1c754e; }
+[data-theme="dark"] .sidebar-bottom, [data-theme="dark"] .account-folders, [data-theme="dark"] .message-list, [data-theme="dark"] .message-header, [data-theme="dark"] .attachment-section, [data-theme="dark"] .preview-tabs, [data-theme="dark"] .connection-card div, [data-theme="dark"] .connection-credentials, [data-theme="dark"] .connection-credentials > div + div, [data-theme="dark"] .preference-section, [data-theme="dark"] .settings-accounts-link, [data-theme="dark"] .shortcut { border-color: #34435b; }

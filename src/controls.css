@@ -1,0 +1,94 @@
+.modal label.checkbox-label { display: flex; align-items: center; gap: 9px; margin: 20px 0; }
+.modal label.checkbox-label input { width: 16px; height: 16px; margin: 0; accent-color: #3150c9; }
+.account-settings { border-top: 1px solid #e7ecf2; padding-top: 10px; margin-top: 20px; }
+.account-settings h3 { color: #718198; font-size: 12px; }
+.account-settings > div { display: flex; align-items: center; gap: 5px; min-height: 37px; }
+.account-settings span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; font-size: 11px; }
+.account-settings button:not(.icon-only) { border: 0; padding: 5px; background: transparent; color: #3150c9; font-size: 10px; }
+.error-banner, .toast { z-index: 60; }
+button:focus-visible { outline: 2px solid #6983da; outline-offset: 3px; }
+.brand, .reader-toolbar { -webkit-app-region: drag; }
+.reader-toolbar button { -webkit-app-region: no-drag; }
+@media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+.wide-modal { width: min(100%, 660px); }
+.mailbox-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+.mailbox-actions button { display: inline-flex; align-items: center; gap: 5px; border: 1px solid #dfe6f0; background: #f7f9fe; color: #3150c9; border-radius: 6px; padding: 7px; font-size: 10px; font-weight: 650; }
+.account-cards { display: grid; gap: 12px; }
+.account-card { border: 1px solid #e2e8f1; border-radius: 11px; padding: 16px; background: #fcfdff; }
+.account-card-title { display: flex; align-items: center; gap: 9px; overflow-wrap: anywhere; font-size: 13px; }
+.account-card-actions { display: flex; gap: 7px; margin-top: 16px; flex-wrap: wrap; }
+.account-card-actions button { font-size: 11px; padding: 8px 10px; }
+.danger-button { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #edcfca; border-radius: 8px; background: #fff8f6; color: #ac5147; font-size: 12px; font-weight: 650; padding: 9px 12px; }
+.account-empty { text-align: center; padding: 24px; background: #f7f9fe; border-radius: 11px; color: #6c7e98; font-size: 12px; line-height: 1.6; }
+.password-input { position: relative; }
+.modal label .password-input input { padding-right: 43px; }
+.password-input button { position: absolute; right: 4px; top: 4px; }
+.connection-credentials { margin: 15px 0 5px; border: 1px solid #e2e8f1; border-radius: 9px; overflow: hidden; }
+.connection-credentials > div { display: flex; align-items: center; gap: 7px; padding: 9px 12px; min-height: 48px; }
+.connection-credentials > div + div { border-top: 1px solid #e2e8f1; }
+.connection-credentials span { font-size: 11px; color: #7d8da2; width: 108px; flex-shrink: 0; }
+.connection-credentials code { flex: 1; min-width: 0; overflow-wrap: anywhere; font-size: 12px; color: #314865; }
+.config-heading { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 23px 0 12px; }
+.config-heading h3 { margin: 0; font-size: 14px; color: #304260; }
+.config-heading p { margin: 4px 0 0; font-size: 11px; color: #8192a9; }
+.config-heading .primary { font-size: 11px; padding: 9px 11px; }
+.env-config { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.9 ui-monospace, SFMono-Regular, Consolas, monospace; background: #182840; color: #d4e4ff; border-radius: 10px; padding: 17px; margin: 0; }
+.password-recovery { padding: 12px; margin-top: 12px; border: 1px solid #ecdeba; border-radius: 9px; background: #fffcf5; }
+.password-recovery p { margin: 0; font-size: 11px; color: #8d794d; line-height: 1.6; }
+.password-recovery form { display: flex; align-items: end; gap: 10px; }
+.password-recovery label { flex: 1; min-width: 0; }
+.password-recovery button { margin-bottom: 14px; }
+.password-change-link { display: flex; align-items: center; gap: 6px; margin-top: 10px; padding: 4px 0; font-size: 11px; }
+.settings-accounts-link { padding-top: 18px; border-top: 1px solid #e7ecf2; margin-top: 20px; font-size: 12px; }
+.settings-accounts-link p { font-size: 11px; line-height: 1.6; color: #8192a9; }
+.inline-error { font-size: 12px; color: #ad5044; }
+.inline-success { font-size: 12px; color: #348256; }
+.guide-note button { flex-shrink: 0; }
+.field-help { color: #8191a5; line-height: 1.6; }
+.delete-mail-button { padding: 7px 10px; font-size: 11px; }
+.select-all { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.select-all input, .message-checkbox { width: 14px; height: 14px; accent-color: #3150c9; cursor: pointer; flex: none; }
+.message-row .message-checkbox { margin: 1px 0 0; }
+.message-open { display: flex; align-items: flex-start; gap: 5px; flex: 1; min-width: 0; padding: 0; border: 0; background: transparent; text-align: left; color: inherit; }
+.message-row.checked { background: #edf2ff; }
+.bulk-actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 14px; border-top: 1px solid #e2e9f4; background: #f3f6fd; }
+.bulk-actions button { display: inline-flex; gap: 5px; align-items: center; padding: 7px 8px; border: 1px solid #d9e2f4; border-radius: 6px; background: #fff; color: #3b568c; font-size: 10px; font-weight: 650; }
+.bulk-actions button:hover { background: #e9efff; }
+.connection-copy { display: inline-flex; gap: 4px; align-items: center; border: 0; background: #edf2ff; color: #3150c9; border-radius: 5px; font-size: 10px; padding: 4px 7px; margin-top: 9px; }
+.preview-body a { color: #3150c9; text-decoration: underline; }
+.incoming-toast { position: fixed; right: 22px; top: 24px; z-index: 65; width: 340px; padding: 15px 18px; border: 1px solid #d7e2f5; border-radius: 12px; background: #fff; box-shadow: 0 12px 35px #13284830; }
+.incoming-title { display: flex; gap: 8px; align-items: center; font-size: 11px; color: #3150c9; font-weight: 750; }
+.incoming-title button { margin-left: auto; width: 24px; height: 24px; }
+.incoming-toast > strong { display: block; font-size: 13px; margin-top: 9px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.incoming-toast p { font-size: 11px; color: #7e8fa5; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.incoming-toast .text-button { padding: 0; margin-top: 4px; }
+.preference-section { border-top: 1px solid #e7ecf2; margin-top: 20px; padding-top: 12px; }
+.preference-section h3 { font-size: 13px; color: #526b8b; }
+.preference-section label.checkbox-label { margin-bottom: 7px; }
+.reader-toolbar > div { flex-wrap: wrap; }
+@media(max-width:1150px) { .reader-toolbar .toolbar-label { display: none; } .reader-toolbar { justify-content: flex-end; padding: 10px 14px; } }
+.incoming-toast { top: auto; bottom: 80px; }
+
+.unread-badge { flex: none; display: inline-flex; justify-content: center; align-items: center; min-width: 21px; height: 20px; padding: 0 6px; border-radius: 10px; background: #3150c9; color: #fff; font-size: 10px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.account-name, .folder-name { flex: 1; min-width: 0; }
+.account-chevron { flex: none; transform: rotate(-90deg); color: #8191a5; }
+.account-chevron.expanded { transform: rotate(0); }
+.account-nav { gap: 7px; padding-left: 7px; padding-right: 7px; }
+.account-folders .unread-badge { min-width: 19px; height: 18px; font-size: 9px; }
+.account-folders button { min-width: 0; }
+.folder-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+[data-theme="dark"] .unread-badge { background: #6b8cec; color: #0b1425; }
+
+/* Only the account list consumes the remaining sidebar height. */
+.app-shell { min-height: 0; }
+.sidebar { min-height: 0; overflow: hidden; }
+.brand, .compose-button, .sidebar-bottom { flex-shrink: 0; }
+.side-scroll { flex: 1 1 0; min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; }
+.update-notice { color: #23845d; font-weight: 700; }
+.update-dot { width: 7px; height: 7px; border-radius: 50%; background: #2ab879; margin-left: auto; flex-shrink: 0; }
+.update-release { padding: 18px; background: color-mix(in srgb, currentColor 4%, transparent); border: 1px solid color-mix(in srgb, currentColor 12%, transparent); border-radius: 12px; }
+.update-release h3 { margin: 9px 0; }
+.update-release h3 small { font-weight: 400; font-size: 13px; }
+.update-notes { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; line-height: 1.7; user-select: text; max-height: 250px; overflow-y: auto; }
+.update-progress { display: grid; gap: 10px; margin: 18px 0; }
+.update-progress progress { width: 100%; accent-color: #279b70; }

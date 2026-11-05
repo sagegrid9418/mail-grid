@@ -1,0 +1,58 @@
+name: Verify desktop source
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            arch: x64
+          - os: windows-latest
+            arch: x64
+          - os: macos-latest
+            arch: arm64
+          - os: macos-latest
+            arch: x64
+    runs-on: ${{ matrix.os }}
+    env:
+      CGO_ENABLED: '0'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: engine/go.mod
+          cache-dependency-path: engine/go.sum
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test:engine
+      - name: Build and test native engine
+        run: npm run build:engine
+      - run: python tests/integration.py
+      - run: npm run build:main && npm run build:ui
+      - run: npm run test:credentials && npm run test:connection && npm run test:content
+      - name: Verify desktop on Linux
+        if: runner.os == 'Linux'
+        run: xvfb-run --auto-servernum npm run test:desktop && xvfb-run --auto-servernum npm run test:accounts && xvfb-run --auto-servernum npm run test:mailbox && xvfb-run --auto-servernum npm run test:sidebar
+      - name: Verify desktop on macOS / Windows
+        if: runner.os != 'Linux'
+        run: npm run test:desktop && npm run test:accounts && npm run test:mailbox && npm run test:sidebar
+      - name: Build target application
+        env:
+          MAILGRID_ARCH: ${{ matrix.arch }}
+        run: npm run build

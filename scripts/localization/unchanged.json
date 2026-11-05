@@ -1,0 +1,35 @@
+{
+  "global": [
+    "Mail Grid",
+    "MAIL GRID",
+    "MAIL_FROM_NAME=\"${APP_NAME}\"",
+    "Laravel .env",
+    "alice@mailgrid.test",
+    "bob@mailgrid.test, anyone@example.com",
+    "php artisan config:clear",
+    "v",
+    "•",
+    "••••••••",
+    "⌘ K"
+  ],
+  "languages": {
+    "es": [
+      "Manual"
+    ],
+    "fr": [
+      "Message",
+      "{count} messages"
+    ],
+    "it": [
+      "Password"
+    ],
+    "nl": [
+      "Accounts",
+      "Account",
+      "Later"
+    ],
+    "pt": [
+      "Manual"
+    ]
+  }
+}

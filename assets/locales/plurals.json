@@ -1,0 +1,718 @@
+{
+  "ar": {
+    "{count} messages": {
+      "zero": "الرسائل: {count}",
+      "one": "الرسائل: {count}",
+      "two": "الرسائل: {count}",
+      "few": "الرسائل: {count}",
+      "many": "الرسائل: {count}",
+      "other": "الرسائل: {count}"
+    },
+    "{count} unread emails": {
+      "zero": "الرسائل غير المقروءة: {count}",
+      "one": "الرسائل غير المقروءة: {count}",
+      "two": "الرسائل غير المقروءة: {count}",
+      "few": "الرسائل غير المقروءة: {count}",
+      "many": "الرسائل غير المقروءة: {count}",
+      "other": "الرسائل غير المقروءة: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "zero": "الرسائل المنقولة إلى المهملات: {count}",
+      "one": "الرسائل المنقولة إلى المهملات: {count}",
+      "two": "الرسائل المنقولة إلى المهملات: {count}",
+      "few": "الرسائل المنقولة إلى المهملات: {count}",
+      "many": "الرسائل المنقولة إلى المهملات: {count}",
+      "other": "الرسائل المنقولة إلى المهملات: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "zero": "الرسائل المستعادة إلى الوارد: {count}",
+      "one": "الرسائل المستعادة إلى الوارد: {count}",
+      "two": "الرسائل المستعادة إلى الوارد: {count}",
+      "few": "الرسائل المستعادة إلى الوارد: {count}",
+      "many": "الرسائل المستعادة إلى الوارد: {count}",
+      "other": "الرسائل المستعادة إلى الوارد: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "zero": "الرسائل المحذوفة نهائيًا: {count}",
+      "one": "الرسائل المحذوفة نهائيًا: {count}",
+      "two": "الرسائل المحذوفة نهائيًا: {count}",
+      "few": "الرسائل المحذوفة نهائيًا: {count}",
+      "many": "الرسائل المحذوفة نهائيًا: {count}",
+      "other": "الرسائل المحذوفة نهائيًا: {count}"
+    },
+    "{count} emails marked as read": {
+      "zero": "الرسائل المحددة كمقروءة: {count}",
+      "one": "الرسائل المحددة كمقروءة: {count}",
+      "two": "الرسائل المحددة كمقروءة: {count}",
+      "few": "الرسائل المحددة كمقروءة: {count}",
+      "many": "الرسائل المحددة كمقروءة: {count}",
+      "other": "الرسائل المحددة كمقروءة: {count}"
+    },
+    "{count} emails marked as unread": {
+      "zero": "الرسائل المحددة كغير مقروءة: {count}",
+      "one": "الرسائل المحددة كغير مقروءة: {count}",
+      "two": "الرسائل المحددة كغير مقروءة: {count}",
+      "few": "الرسائل المحددة كغير مقروءة: {count}",
+      "many": "الرسائل المحددة كغير مقروءة: {count}",
+      "other": "الرسائل المحددة كغير مقروءة: {count}"
+    }
+  },
+  "de": {
+    "{count} messages": {
+      "one": "Nachrichten: {count}",
+      "other": "Nachrichten: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Ungelesene E-Mails: {count}",
+      "other": "Ungelesene E-Mails: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "In den Papierkorb verschobene E-Mails: {count}",
+      "other": "In den Papierkorb verschobene E-Mails: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Im Posteingang wiederhergestellte E-Mails: {count}",
+      "other": "Im Posteingang wiederhergestellte E-Mails: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Endgültig gelöschte E-Mails: {count}",
+      "other": "Endgültig gelöschte E-Mails: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Als gelesen markierte E-Mails: {count}",
+      "other": "Als gelesen markierte E-Mails: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Als ungelesen markierte E-Mails: {count}",
+      "other": "Als ungelesen markierte E-Mails: {count}"
+    }
+  },
+  "es": {
+    "{count} messages": {
+      "one": "Mensajes: {count}",
+      "many": "Mensajes: {count}",
+      "other": "Mensajes: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Correos sin leer: {count}",
+      "many": "Correos sin leer: {count}",
+      "other": "Correos sin leer: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Correos movidos a la papelera: {count}",
+      "many": "Correos movidos a la papelera: {count}",
+      "other": "Correos movidos a la papelera: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Correos restaurados en la bandeja de entrada: {count}",
+      "many": "Correos restaurados en la bandeja de entrada: {count}",
+      "other": "Correos restaurados en la bandeja de entrada: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Correos eliminados definitivamente: {count}",
+      "many": "Correos eliminados definitivamente: {count}",
+      "other": "Correos eliminados definitivamente: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Correos marcados como leídos: {count}",
+      "many": "Correos marcados como leídos: {count}",
+      "other": "Correos marcados como leídos: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Correos marcados como no leídos: {count}",
+      "many": "Correos marcados como no leídos: {count}",
+      "other": "Correos marcados como no leídos: {count}"
+    }
+  },
+  "fa": {
+    "{count} messages": {
+      "one": "پیام‌ها: {count}",
+      "other": "پیام‌ها: {count}"
+    },
+    "{count} unread emails": {
+      "one": "ایمیل‌های خوانده‌نشده: {count}",
+      "other": "ایمیل‌های خوانده‌نشده: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "ایمیل‌های منتقل‌شده به زباله‌دان: {count}",
+      "other": "ایمیل‌های منتقل‌شده به زباله‌دان: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "ایمیل‌های بازگردانده‌شده به صندوق ورودی: {count}",
+      "other": "ایمیل‌های بازگردانده‌شده به صندوق ورودی: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "ایمیل‌های حذف‌شده برای همیشه: {count}",
+      "other": "ایمیل‌های حذف‌شده برای همیشه: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "ایمیل‌های علامت‌گذاری‌شده به‌عنوان خوانده‌شده: {count}",
+      "other": "ایمیل‌های علامت‌گذاری‌شده به‌عنوان خوانده‌شده: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "ایمیل‌های علامت‌گذاری‌شده به‌عنوان خوانده‌نشده: {count}",
+      "other": "ایمیل‌های علامت‌گذاری‌شده به‌عنوان خوانده‌نشده: {count}"
+    }
+  },
+  "fr": {
+    "{count} messages": {
+      "one": "Messages : {count}",
+      "many": "Messages : {count}",
+      "other": "Messages : {count}"
+    },
+    "{count} unread emails": {
+      "one": "E-mails non lus : {count}",
+      "many": "E-mails non lus : {count}",
+      "other": "E-mails non lus : {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "E-mails déplacés vers la corbeille : {count}",
+      "many": "E-mails déplacés vers la corbeille : {count}",
+      "other": "E-mails déplacés vers la corbeille : {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "E-mails restaurés dans la boîte de réception : {count}",
+      "many": "E-mails restaurés dans la boîte de réception : {count}",
+      "other": "E-mails restaurés dans la boîte de réception : {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "E-mails supprimés définitivement : {count}",
+      "many": "E-mails supprimés définitivement : {count}",
+      "other": "E-mails supprimés définitivement : {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "E-mails marqués comme lus : {count}",
+      "many": "E-mails marqués comme lus : {count}",
+      "other": "E-mails marqués comme lus : {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "E-mails marqués comme non lus : {count}",
+      "many": "E-mails marqués comme non lus : {count}",
+      "other": "E-mails marqués comme non lus : {count}"
+    }
+  },
+  "ha": {
+    "{count} messages": {
+      "one": "Saƙonni: {count}",
+      "other": "Saƙonni: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Saƙonnin da ba a karanta ba: {count}",
+      "other": "Saƙonnin da ba a karanta ba: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Saƙonnin da aka kai kwandon shara: {count}",
+      "other": "Saƙonnin da aka kai kwandon shara: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Saƙonnin da aka mayar akwatin saƙonni: {count}",
+      "other": "Saƙonnin da aka mayar akwatin saƙonni: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Saƙonnin da aka goge har abada: {count}",
+      "other": "Saƙonnin da aka goge har abada: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Saƙonnin da aka yi wa alamar an karanta: {count}",
+      "other": "Saƙonnin da aka yi wa alamar an karanta: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Saƙonnin da aka yi wa alamar ba a karanta ba: {count}",
+      "other": "Saƙonnin da aka yi wa alamar ba a karanta ba: {count}"
+    }
+  },
+  "he": {
+    "{count} messages": {
+      "one": "הודעות: {count}",
+      "two": "הודעות: {count}",
+      "other": "הודעות: {count}"
+    },
+    "{count} unread emails": {
+      "one": "הודעות שלא נקראו: {count}",
+      "two": "הודעות שלא נקראו: {count}",
+      "other": "הודעות שלא נקראו: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "הודעות שהועברו לאשפה: {count}",
+      "two": "הודעות שהועברו לאשפה: {count}",
+      "other": "הודעות שהועברו לאשפה: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "הודעות ששוחזרו לדואר נכנס: {count}",
+      "two": "הודעות ששוחזרו לדואר נכנס: {count}",
+      "other": "הודעות ששוחזרו לדואר נכנס: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "הודעות שנמחקו לצמיתות: {count}",
+      "two": "הודעות שנמחקו לצמיתות: {count}",
+      "other": "הודעות שנמחקו לצמיתות: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "הודעות שסומנו כנקראו: {count}",
+      "two": "הודעות שסומנו כנקראו: {count}",
+      "other": "הודעות שסומנו כנקראו: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "הודעות שסומנו כלא נקראו: {count}",
+      "two": "הודעות שסומנו כלא נקראו: {count}",
+      "other": "הודעות שסומנו כלא נקראו: {count}"
+    }
+  },
+  "hi": {
+    "{count} messages": {
+      "one": "संदेश: {count}",
+      "other": "संदेश: {count}"
+    },
+    "{count} unread emails": {
+      "one": "अपठित ईमेल: {count}",
+      "other": "अपठित ईमेल: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "कूड़ेदान में भेजे गए ईमेल: {count}",
+      "other": "कूड़ेदान में भेजे गए ईमेल: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "इनबॉक्स में बहाल किए गए ईमेल: {count}",
+      "other": "इनबॉक्स में बहाल किए गए ईमेल: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "हमेशा के लिए मिटाए गए ईमेल: {count}",
+      "other": "हमेशा के लिए मिटाए गए ईमेल: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "पढ़े गए चिह्नित ईमेल: {count}",
+      "other": "पढ़े गए चिह्नित ईमेल: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "अपठित चिह्नित ईमेल: {count}",
+      "other": "अपठित चिह्नित ईमेल: {count}"
+    }
+  },
+  "id": {
+    "{count} messages": {
+      "other": "Pesan: {count}"
+    },
+    "{count} unread emails": {
+      "other": "Email belum dibaca: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "Email dipindahkan ke Sampah: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "Email dipulihkan ke Kotak Masuk: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "Email dihapus permanen: {count}"
+    },
+    "{count} emails marked as read": {
+      "other": "Email ditandai sudah dibaca: {count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "Email ditandai belum dibaca: {count}"
+    }
+  },
+  "ig": {
+    "{count} messages": {
+      "other": "Ozi: {count}"
+    },
+    "{count} unread emails": {
+      "other": "Ozi a na-agụbeghị: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "Ozi ebugara na mkpofu: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "Ozi eweghachiri n’igbe mbata: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "Ozi ehichapụrụ kpamkpam: {count}"
+    },
+    "{count} emails marked as read": {
+      "other": "Ozi akara dị ka agụọla: {count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "Ozi akara dị ka a na-agụbeghị: {count}"
+    }
+  },
+  "it": {
+    "{count} messages": {
+      "one": "Messaggi: {count}",
+      "many": "Messaggi: {count}",
+      "other": "Messaggi: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Email non lette: {count}",
+      "many": "Email non lette: {count}",
+      "other": "Email non lette: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Email spostate nel cestino: {count}",
+      "many": "Email spostate nel cestino: {count}",
+      "other": "Email spostate nel cestino: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Email ripristinate nella posta in arrivo: {count}",
+      "many": "Email ripristinate nella posta in arrivo: {count}",
+      "other": "Email ripristinate nella posta in arrivo: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Email eliminate definitivamente: {count}",
+      "many": "Email eliminate definitivamente: {count}",
+      "other": "Email eliminate definitivamente: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Email contrassegnate come lette: {count}",
+      "many": "Email contrassegnate come lette: {count}",
+      "other": "Email contrassegnate come lette: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Email contrassegnate come non lette: {count}",
+      "many": "Email contrassegnate come non lette: {count}",
+      "other": "Email contrassegnate come non lette: {count}"
+    }
+  },
+  "ja": {
+    "{count} messages": {
+      "other": "メッセージ数: {count}"
+    },
+    "{count} unread emails": {
+      "other": "未読メール数: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "ゴミ箱に移動したメール数: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "受信トレイに復元したメール数: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "完全に削除したメール数: {count}"
+    },
+    "{count} emails marked as read": {
+      "other": "既読にしたメール数: {count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "未読にしたメール数: {count}"
+    }
+  },
+  "ko": {
+    "{count} messages": {
+      "other": "메시지 수: {count}"
+    },
+    "{count} unread emails": {
+      "other": "읽지 않은 메일 수: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "휴지통으로 옮긴 메일 수: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "받은편지함으로 복원한 메일 수: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "영구 삭제한 메일 수: {count}"
+    },
+    "{count} emails marked as read": {
+      "other": "읽음으로 표시한 메일 수: {count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "읽지 않음으로 표시한 메일 수: {count}"
+    }
+  },
+  "nl": {
+    "{count} messages": {
+      "one": "Berichten: {count}",
+      "other": "Berichten: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Ongelezen e-mails: {count}",
+      "other": "Ongelezen e-mails: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Naar de prullenbak verplaatste e-mails: {count}",
+      "other": "Naar de prullenbak verplaatste e-mails: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "In Postvak IN herstelde e-mails: {count}",
+      "other": "In Postvak IN herstelde e-mails: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Definitief verwijderde e-mails: {count}",
+      "other": "Definitief verwijderde e-mails: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Als gelezen gemarkeerde e-mails: {count}",
+      "other": "Als gelezen gemarkeerde e-mails: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Als ongelezen gemarkeerde e-mails: {count}",
+      "other": "Als ongelezen gemarkeerde e-mails: {count}"
+    }
+  },
+  "pl": {
+    "{count} messages": {
+      "one": "Wiadomości: {count}",
+      "few": "Wiadomości: {count}",
+      "many": "Wiadomości: {count}",
+      "other": "Wiadomości: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Nieprzeczytane wiadomości: {count}",
+      "few": "Nieprzeczytane wiadomości: {count}",
+      "many": "Nieprzeczytane wiadomości: {count}",
+      "other": "Nieprzeczytane wiadomości: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Wiadomości przeniesione do kosza: {count}",
+      "few": "Wiadomości przeniesione do kosza: {count}",
+      "many": "Wiadomości przeniesione do kosza: {count}",
+      "other": "Wiadomości przeniesione do kosza: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Wiadomości przywrócone do skrzynki odbiorczej: {count}",
+      "few": "Wiadomości przywrócone do skrzynki odbiorczej: {count}",
+      "many": "Wiadomości przywrócone do skrzynki odbiorczej: {count}",
+      "other": "Wiadomości przywrócone do skrzynki odbiorczej: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Wiadomości trwale usunięte: {count}",
+      "few": "Wiadomości trwale usunięte: {count}",
+      "many": "Wiadomości trwale usunięte: {count}",
+      "other": "Wiadomości trwale usunięte: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Wiadomości oznaczone jako przeczytane: {count}",
+      "few": "Wiadomości oznaczone jako przeczytane: {count}",
+      "many": "Wiadomości oznaczone jako przeczytane: {count}",
+      "other": "Wiadomości oznaczone jako przeczytane: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Wiadomości oznaczone jako nieprzeczytane: {count}",
+      "few": "Wiadomości oznaczone jako nieprzeczytane: {count}",
+      "many": "Wiadomości oznaczone jako nieprzeczytane: {count}",
+      "other": "Wiadomości oznaczone jako nieprzeczytane: {count}"
+    }
+  },
+  "pt": {
+    "{count} messages": {
+      "one": "Mensagens: {count}",
+      "many": "Mensagens: {count}",
+      "other": "Mensagens: {count}"
+    },
+    "{count} unread emails": {
+      "one": "E-mails não lidos: {count}",
+      "many": "E-mails não lidos: {count}",
+      "other": "E-mails não lidos: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "E-mails movidos para a lixeira: {count}",
+      "many": "E-mails movidos para a lixeira: {count}",
+      "other": "E-mails movidos para a lixeira: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "E-mails restaurados na caixa de entrada: {count}",
+      "many": "E-mails restaurados na caixa de entrada: {count}",
+      "other": "E-mails restaurados na caixa de entrada: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "E-mails excluídos permanentemente: {count}",
+      "many": "E-mails excluídos permanentemente: {count}",
+      "other": "E-mails excluídos permanentemente: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "E-mails marcados como lidos: {count}",
+      "many": "E-mails marcados como lidos: {count}",
+      "other": "E-mails marcados como lidos: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "E-mails marcados como não lidos: {count}",
+      "many": "E-mails marcados como não lidos: {count}",
+      "other": "E-mails marcados como não lidos: {count}"
+    }
+  },
+  "ru": {
+    "{count} messages": {
+      "one": "Сообщения: {count}",
+      "few": "Сообщения: {count}",
+      "many": "Сообщения: {count}",
+      "other": "Сообщения: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Непрочитанные письма: {count}",
+      "few": "Непрочитанные письма: {count}",
+      "many": "Непрочитанные письма: {count}",
+      "other": "Непрочитанные письма: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Письма, перемещённые в корзину: {count}",
+      "few": "Письма, перемещённые в корзину: {count}",
+      "many": "Письма, перемещённые в корзину: {count}",
+      "other": "Письма, перемещённые в корзину: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Письма, восстановленные во входящих: {count}",
+      "few": "Письма, восстановленные во входящих: {count}",
+      "many": "Письма, восстановленные во входящих: {count}",
+      "other": "Письма, восстановленные во входящих: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Письма, удалённые навсегда: {count}",
+      "few": "Письма, удалённые навсегда: {count}",
+      "many": "Письма, удалённые навсегда: {count}",
+      "other": "Письма, удалённые навсегда: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Письма, отмеченные прочитанными: {count}",
+      "few": "Письма, отмеченные прочитанными: {count}",
+      "many": "Письма, отмеченные прочитанными: {count}",
+      "other": "Письма, отмеченные прочитанными: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Письма, отмеченные непрочитанными: {count}",
+      "few": "Письма, отмеченные непрочитанными: {count}",
+      "many": "Письма, отмеченные непрочитанными: {count}",
+      "other": "Письма, отмеченные непрочитанными: {count}"
+    }
+  },
+  "sw": {
+    "{count} messages": {
+      "one": "Ujumbe: {count}",
+      "other": "Ujumbe: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Barua ambazo hazijasomwa: {count}",
+      "other": "Barua ambazo hazijasomwa: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Barua zilizohamishwa hadi kwenye Tupio: {count}",
+      "other": "Barua zilizohamishwa hadi kwenye Tupio: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Barua zilizorejeshwa kwenye Kikasha: {count}",
+      "other": "Barua zilizorejeshwa kwenye Kikasha: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Barua zilizofutwa kabisa: {count}",
+      "other": "Barua zilizofutwa kabisa: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Barua zilizowekewa alama kuwa zimesomwa: {count}",
+      "other": "Barua zilizowekewa alama kuwa zimesomwa: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Barua zilizowekewa alama kuwa hazijasomwa: {count}",
+      "other": "Barua zilizowekewa alama kuwa hazijasomwa: {count}"
+    }
+  },
+  "uk": {
+    "{count} messages": {
+      "one": "Повідомлення: {count}",
+      "few": "Повідомлення: {count}",
+      "many": "Повідомлення: {count}",
+      "other": "Повідомлення: {count}"
+    },
+    "{count} unread emails": {
+      "one": "Непрочитані листи: {count}",
+      "few": "Непрочитані листи: {count}",
+      "many": "Непрочитані листи: {count}",
+      "other": "Непрочитані листи: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "one": "Листи, переміщені до кошика: {count}",
+      "few": "Листи, переміщені до кошика: {count}",
+      "many": "Листи, переміщені до кошика: {count}",
+      "other": "Листи, переміщені до кошика: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "one": "Листи, відновлені у вхідних: {count}",
+      "few": "Листи, відновлені у вхідних: {count}",
+      "many": "Листи, відновлені у вхідних: {count}",
+      "other": "Листи, відновлені у вхідних: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "one": "Листи, видалені назавжди: {count}",
+      "few": "Листи, видалені назавжди: {count}",
+      "many": "Листи, видалені назавжди: {count}",
+      "other": "Листи, видалені назавжди: {count}"
+    },
+    "{count} emails marked as read": {
+      "one": "Листи, позначені прочитаними: {count}",
+      "few": "Листи, позначені прочитаними: {count}",
+      "many": "Листи, позначені прочитаними: {count}",
+      "other": "Листи, позначені прочитаними: {count}"
+    },
+    "{count} emails marked as unread": {
+      "one": "Листи, позначені непрочитаними: {count}",
+      "few": "Листи, позначені непрочитаними: {count}",
+      "many": "Листи, позначені непрочитаними: {count}",
+      "other": "Листи, позначені непрочитаними: {count}"
+    }
+  },
+  "yo": {
+    "{count} messages": {
+      "other": "Àwọn ìfiranṣẹ́: {count}"
+    },
+    "{count} unread emails": {
+      "other": "Àwọn ímeèlì tí a kò kà: {count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "Àwọn ímeèlì tí a gbé sí pàǹtírí: {count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "Àwọn ímeèlì tí a dá padà sínú àpótí ìwọlé: {count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "Àwọn ímeèlì tí a parẹ́ pátápátá: {count}"
+    },
+    "{count} emails marked as read": {
+      "other": "Àwọn ímeèlì tí a sàmì sí pé a ti kà: {count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "Àwọn ímeèlì tí a sàmì sí pé a kò kà: {count}"
+    }
+  },
+  "zh": {
+    "{count} messages": {
+      "other": "邮件数：{count}"
+    },
+    "{count} unread emails": {
+      "other": "未读邮件数：{count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "移入垃圾箱的邮件数：{count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "恢复到收件箱的邮件数：{count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "永久删除的邮件数：{count}"
+    },
+    "{count} emails marked as read": {
+      "other": "标记为已读的邮件数：{count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "标记为未读的邮件数：{count}"
+    }
+  },
+  "zh-Hant": {
+    "{count} messages": {
+      "other": "郵件數：{count}"
+    },
+    "{count} unread emails": {
+      "other": "未讀郵件數：{count}"
+    },
+    "{count} emails moved to Trash": {
+      "other": "移入垃圾桶的郵件數：{count}"
+    },
+    "{count} emails restored to Inbox": {
+      "other": "恢復到收件匣的郵件數：{count}"
+    },
+    "{count} emails permanently deleted": {
+      "other": "永久刪除的郵件數：{count}"
+    },
+    "{count} emails marked as read": {
+      "other": "標記為已讀的郵件數：{count}"
+    },
+    "{count} emails marked as unread": {
+      "other": "標記為未讀的郵件數：{count}"
+    }
+  }
+}
