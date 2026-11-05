@@ -11,7 +11,7 @@ const freePort = () => new Promise((resolve, reject) => {
 });
 (async () => {
   const dir = mkdtempSync(path.join(tmpdir(), 'mailgrid-accounts-'));
-  const address = 'admin@flux-cargo.test';
+  const address = 'developer@mailgrid.test';
   let app;
   const launch = async () => {
     const env = { ...process.env, MAILGRID_DATA_DIR: dir }; delete env.ELECTRON_RUN_AS_NODE;
@@ -53,7 +53,7 @@ const freePort = () => new Promise((resolve, reject) => {
     await page.getByRole('button', { name: 'Save password', exact: true }).click();
     await page.getByRole('dialog').getByRole('button', { name: 'Connection settings', exact: true }).click();
     await copy().click();
-    assert((await copied()).includes('MAIL_PASSWORD=green'));
+    assert((await copied()).includes('MAIL_PASSWORD=fixture-password'));
     await page.evaluate((address) => window.mailgrid.request('accounts.verifyPassword', { address, password: 'fixture-password' }), address);
     assert(await page.evaluate(async (address) => {
       try { await window.mailgrid.request('accounts.verifyPassword', { address, password: 'a' }); return false; } catch { return true; }
@@ -70,7 +70,7 @@ const freePort = () => new Promise((resolve, reject) => {
     await page.getByLabel('Current account password', { exact: true }).fill('fixture-password');
     await page.getByRole('button', { name: 'Use this password', exact: true }).click();
     await copy().click();
-    assert((await copied()).includes('MAIL_PASSWORD=green'));
+    assert((await copied()).includes('MAIL_PASSWORD=fixture-password'));
     await page.getByRole('button', { name: 'Close dialog', exact: true }).click();
     await page.getByRole('button', { name: 'Accounts & passwords', exact: true }).click();
     page.once('dialog', (dialog) => dialog.accept());

@@ -68,6 +68,7 @@ const freePort = async () => { const server = await listen(); const port = serve
     await page.getByRole('button', { name: 'Save settings', exact: true }).click();
     await page.getByRole('button', { name: 'Restart now', exact: true }).click();
     await page.getByText('Mail service offline', { exact: true }).waitFor();
+    await page.getByRole('button', { name: 'Dismiss error', exact: true }).click();
     await page.getByRole('button', { name: 'Settings', exact: true }).click();
     await page.getByLabel('SMTP port', { exact: true }).fill(String(await freePort()));
     await page.getByRole('button', { name: 'Save settings', exact: true }).click();
